@@ -12,6 +12,10 @@ use GuzzleHttp\Psr7\Uri;
 
 class VkAdsOAuth extends BaseService
 {
+    public function __construct()
+    {
+    }
+
     private array  $headers = [
         'Content-Type' => 'application/x-www-form-urlencoded'
     ];
@@ -19,7 +23,7 @@ class VkAdsOAuth extends BaseService
     /**
      * @param $client_id
      * @param $state
-     * @param ScopeAgencyClientEnum[]|ScopeClientEnum[]|ScopeManagerClientEnum[] $scope
+     * @param string[]|ScopeAgencyClientEnum[]|ScopeClientEnum[]|ScopeManagerClientEnum[] $scope
      * @param $redirect_uri
      * @return string
      */
