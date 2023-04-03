@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\local_geo\models;
+namespace VkAdsPhpSdk\services\remarketing\services\local_geo\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\LocalGeoPoint;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\LocalGeoPoint;
 
 class LocalGeoGetItem extends Model
 {

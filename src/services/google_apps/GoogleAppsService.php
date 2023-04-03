@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\google_apps;
+namespace VkAdsPhpSdk\services\google_apps;
 
-use app\vk_ads_api\src\components\BaseService;
+use VkAdsPhpSdk\components\BaseService;
 use GuzzleHttp\Psr7\Request;
 
 class GoogleAppsService extends BaseService

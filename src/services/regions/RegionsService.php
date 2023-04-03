@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\regions;
+namespace VkAdsPhpSdk\services\regions;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\regions\criterias\RegionSelectionCriteria;
-use app\vk_ads_api\src\services\regions\models\Region;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\regions\criterias\RegionSelectionCriteria;
+use VkAdsPhpSdk\services\regions\models\Region;
 
 class RegionsService extends BaseService
 {

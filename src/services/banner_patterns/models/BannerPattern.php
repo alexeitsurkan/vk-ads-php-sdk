@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\banner_patterns\models;
+namespace VkAdsPhpSdk\services\banner_patterns\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class BannerPattern extends Model
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\vk_ads_api\src\exceptions;
+namespace VkAdsPhpSdk\exceptions;
 
 use Exception;
 

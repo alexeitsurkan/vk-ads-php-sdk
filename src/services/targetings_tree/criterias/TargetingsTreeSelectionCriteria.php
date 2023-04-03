@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\targetings_tree\criterias;
+namespace VkAdsPhpSdk\services\targetings_tree\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class TargetingsTreeSelectionCriteria extends SelectionCriteria
 {

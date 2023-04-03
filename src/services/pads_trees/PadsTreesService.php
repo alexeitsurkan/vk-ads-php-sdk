@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\pads_trees;
+namespace VkAdsPhpSdk\services\pads_trees;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\pads_trees\models\PadsTree;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\pads_trees\models\PadsTree;
 use GuzzleHttp\Psr7\Request;
 
 class PadsTreesService extends BaseService

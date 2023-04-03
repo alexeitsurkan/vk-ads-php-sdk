@@ -1,12 +1,12 @@
 <?php
 
-namespace app\vk_ads_api\src\services\agency;
+namespace VkAdsPhpSdk\services\agency;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\agency\criterias\AgencyClientSelectionCriteria;
-use app\vk_ads_api\src\services\agency\models\AgencyClientAddItem;
-use app\vk_ads_api\src\services\agency\models\AgencyClientGetItem;
-use app\vk_ads_api\src\services\agency\models\AgencyClientUpdateItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\agency\criterias\AgencyClientSelectionCriteria;
+use VkAdsPhpSdk\services\agency\models\AgencyClientAddItem;
+use VkAdsPhpSdk\services\agency\models\AgencyClientGetItem;
+use VkAdsPhpSdk\services\agency\models\AgencyClientUpdateItem;
 
 class AgencyService extends BaseService
 {

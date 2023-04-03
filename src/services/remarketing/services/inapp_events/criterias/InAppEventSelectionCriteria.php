@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\inapp_events\criterias;
+namespace VkAdsPhpSdk\services\remarketing\services\inapp_events\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class InAppEventSelectionCriteria extends SelectionCriteria
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\segments\services\relations\models;
+namespace VkAdsPhpSdk\services\remarketing\services\segments\services\relations\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class SegmentRelationGetItem extends Model
 {

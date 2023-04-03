@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_groups\models;
+namespace VkAdsPhpSdk\services\ad_groups\models;
 
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class AdGroupMassAction extends Model
 {

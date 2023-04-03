@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\banner_fields;
+namespace VkAdsPhpSdk\services\banner_fields;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\banner_fields\criterias\BannerFieldSelectionCriteria;
-use app\vk_ads_api\src\services\banner_fields\models\BannerField;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\banner_fields\criterias\BannerFieldSelectionCriteria;
+use VkAdsPhpSdk\services\banner_fields\models\BannerField;
 
 class BannerFieldsService extends BaseService
 {

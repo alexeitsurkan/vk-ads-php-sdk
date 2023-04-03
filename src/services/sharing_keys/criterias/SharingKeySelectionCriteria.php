@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\sharing_keys\criterias;
+namespace VkAdsPhpSdk\services\sharing_keys\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class SharingKeySelectionCriteria extends SelectionCriteria
 {

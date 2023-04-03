@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\subscription;
+namespace VkAdsPhpSdk\services\subscription;
 
-use app\vk_ads_api\src\components\BaseService;
+use VkAdsPhpSdk\components\BaseService;
 
 class SubscriptionService extends BaseService
 {

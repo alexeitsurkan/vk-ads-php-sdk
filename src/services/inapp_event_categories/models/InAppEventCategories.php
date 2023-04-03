@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\inapp_event_categories\models;
+namespace VkAdsPhpSdk\services\inapp_event_categories\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class InAppEventCategories extends Model
 {

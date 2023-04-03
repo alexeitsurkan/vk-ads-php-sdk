@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\apple_apps\models;
+namespace VkAdsPhpSdk\services\apple_apps\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\ModerationReason;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\ModerationReason;
 
 class SkAdNetworkIdsAddItem extends Model
 {

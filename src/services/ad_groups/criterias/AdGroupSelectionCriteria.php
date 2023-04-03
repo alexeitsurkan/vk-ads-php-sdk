@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_groups\criterias;
+namespace VkAdsPhpSdk\services\ad_groups\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class AdGroupSelectionCriteria extends SelectionCriteria
 {

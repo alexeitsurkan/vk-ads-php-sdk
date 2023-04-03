@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\counters\services\counter_goals;
+namespace VkAdsPhpSdk\services\remarketing\services\counters\services\counter_goals;
 
-use app\vk_ads_api\src\components\BaseService;
+use VkAdsPhpSdk\components\BaseService;
 
 class CounterGoalService extends BaseService
 {

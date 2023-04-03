@@ -1,11 +1,11 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\users_lists;
+namespace VkAdsPhpSdk\services\remarketing\services\users_lists;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\users_lists\criterias\UsersListSelectionCriteria;
-use app\vk_ads_api\src\services\remarketing\services\users_lists\models\RemarketingUsersListGetItem;
-use app\vk_ads_api\src\services\remarketing\services\users_lists\models\RemarketingUsersListUpdateItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\users_lists\criterias\UsersListSelectionCriteria;
+use VkAdsPhpSdk\services\remarketing\services\users_lists\models\RemarketingUsersListGetItem;
+use VkAdsPhpSdk\services\remarketing\services\users_lists\models\RemarketingUsersListUpdateItem;
 
 class UsersListService extends BaseService
 {

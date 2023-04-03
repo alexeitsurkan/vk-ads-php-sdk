@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\segments\models;
+namespace VkAdsPhpSdk\services\remarketing\services\segments\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\SegmentUser;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\SegmentUser;
 
 class SegmentUpdateItem extends Model
 {

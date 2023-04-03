@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\user;
+namespace VkAdsPhpSdk\services\user;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\user\models\UserAddItem;
-use app\vk_ads_api\src\services\user\models\UserGetItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\user\models\UserAddItem;
+use VkAdsPhpSdk\services\user\models\UserGetItem;
 
 class UserService extends BaseService
 {

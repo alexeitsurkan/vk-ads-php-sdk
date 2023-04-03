@@ -1,11 +1,11 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_groups\models;
+namespace VkAdsPhpSdk\services\ad_groups\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\PricedGoal;
-use app\vk_ads_api\src\models\Targetings;
-use app\vk_ads_api\src\services\banners\models\BannerGetItem;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\PricedGoal;
+use VkAdsPhpSdk\models\Targetings;
+use VkAdsPhpSdk\services\banners\models\BannerGetItem;
 
 class AdGroupAddItem extends Model
 {

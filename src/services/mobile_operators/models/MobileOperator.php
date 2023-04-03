@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\mobile_operators\models;
+namespace VkAdsPhpSdk\services\mobile_operators\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class MobileOperator extends Model
 {

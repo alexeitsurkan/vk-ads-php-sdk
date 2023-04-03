@@ -1,15 +1,15 @@
 <?php
 
-namespace app\vk_ads_api\src\services\banners;
+namespace VkAdsPhpSdk\services\banners;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\exceptions\VkAdsApiException;
-use app\vk_ads_api\src\services\banners\criterias\BannerSelectionCriteria;
-use app\vk_ads_api\src\services\banners\models\BannerAddItem;
-use app\vk_ads_api\src\services\banners\models\BannerGetItem;
-use app\vk_ads_api\src\services\banners\models\BannerMassAction;
-use app\vk_ads_api\src\services\banners\models\BannerRemoderateGetItem;
-use app\vk_ads_api\src\services\banners\models\BannerUpdateItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\exceptions\VkAdsApiException;
+use VkAdsPhpSdk\services\banners\criterias\BannerSelectionCriteria;
+use VkAdsPhpSdk\services\banners\models\BannerAddItem;
+use VkAdsPhpSdk\services\banners\models\BannerGetItem;
+use VkAdsPhpSdk\services\banners\models\BannerMassAction;
+use VkAdsPhpSdk\services\banners\models\BannerRemoderateGetItem;
+use VkAdsPhpSdk\services\banners\models\BannerUpdateItem;
 use GuzzleHttp\Psr7\Request;
 
 class BannersService extends BaseService

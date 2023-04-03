@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\projection;
+namespace VkAdsPhpSdk\services\projection;
 
-use app\vk_ads_api\src\components\BaseService;
+use VkAdsPhpSdk\components\BaseService;
 
 class ProjectionService extends BaseService
 {

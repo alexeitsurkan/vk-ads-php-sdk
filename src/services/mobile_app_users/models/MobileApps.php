@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\mobile_app_users\models;
+namespace VkAdsPhpSdk\services\mobile_app_users\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\SkAdNetworkIdsCounts;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\SkAdNetworkIdsCounts;
 
 class MobileApps extends Model
 {

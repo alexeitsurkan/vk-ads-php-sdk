@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\manager;
+namespace VkAdsPhpSdk\services\manager;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\manager\criterias\ManagerClientSelectionCriteria;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\manager\criterias\ManagerClientSelectionCriteria;
 
 class ManagerService extends BaseService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\counters\criterias;
+namespace VkAdsPhpSdk\services\remarketing\services\counters\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class CounterSelectionCriteria extends SelectionCriteria
 {

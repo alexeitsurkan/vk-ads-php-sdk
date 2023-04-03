@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\statistics\enum;
+namespace VkAdsPhpSdk\services\statistics\enum;
 
-use app\vk_ads_api\src\components\Enum;
+use VkAdsPhpSdk\components\Enum;
 
 class StatisticConversionTypeEnum extends Enum
 {

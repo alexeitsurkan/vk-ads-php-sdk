@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\manager\criterias;
+namespace VkAdsPhpSdk\services\manager\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class ManagerClientSelectionCriteria extends SelectionCriteria
 {

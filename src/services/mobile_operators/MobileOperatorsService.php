@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\mobile_operators;
+namespace VkAdsPhpSdk\services\mobile_operators;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\mobile_operators\models\MobileOperator;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\mobile_operators\models\MobileOperator;
 
 class MobileOperatorsService extends BaseService
 {

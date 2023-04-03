@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\goals;
+namespace VkAdsPhpSdk\services\goals;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\goals\models\Goals;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\goals\models\Goals;
 
 class GoalsService extends BaseService
 {

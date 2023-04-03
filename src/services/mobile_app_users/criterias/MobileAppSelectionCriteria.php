@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\mobile_app_users\criterias;
+namespace VkAdsPhpSdk\services\mobile_app_users\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class MobileAppSelectionCriteria extends SelectionCriteria
 {

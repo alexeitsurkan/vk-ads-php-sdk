@@ -1,11 +1,11 @@
 <?php
 
-namespace app\vk_ads_api\src\services\lead_ads;
+namespace VkAdsPhpSdk\services\lead_ads;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\lead_ads\criterias\LeadAdsSelectionCriteria;
-use app\vk_ads_api\src\services\lead_ads\models\LeadsListElement;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\LeadFormsService;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\lead_ads\criterias\LeadAdsSelectionCriteria;
+use VkAdsPhpSdk\services\lead_ads\models\LeadsListElement;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\LeadFormsService;
 
 class LeadAdsService extends BaseService
 {

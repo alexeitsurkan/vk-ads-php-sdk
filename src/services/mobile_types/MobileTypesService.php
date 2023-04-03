@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\mobile_types;
+namespace VkAdsPhpSdk\services\mobile_types;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\mobile_types\models\MobileTypes;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\mobile_types\models\MobileTypes;
 
 class MobileTypesService extends BaseService
 {

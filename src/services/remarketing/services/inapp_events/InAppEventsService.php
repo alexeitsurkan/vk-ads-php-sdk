@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\inapp_events;
+namespace VkAdsPhpSdk\services\remarketing\services\inapp_events;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\inapp_events\criterias\InAppEventSelectionCriteria;
-use app\vk_ads_api\src\services\remarketing\services\inapp_events\services\trackers\TrackersService;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\inapp_events\criterias\InAppEventSelectionCriteria;
+use VkAdsPhpSdk\services\remarketing\services\inapp_events\services\trackers\TrackersService;
 
 class InAppEventsService extends BaseService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\lead_ads\services\lead_forms\criterias;
+namespace VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class LeadsExportSelectionCriteria extends SelectionCriteria
 {

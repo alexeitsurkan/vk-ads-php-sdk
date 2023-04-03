@@ -1,13 +1,13 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\segments;
+namespace VkAdsPhpSdk\services\remarketing\services\segments;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\segments\criterias\SegmentSelectionCriteria;
-use app\vk_ads_api\src\services\remarketing\services\segments\models\SegmentAddItem;
-use app\vk_ads_api\src\services\remarketing\services\segments\models\SegmentGetItem;
-use app\vk_ads_api\src\services\remarketing\services\segments\models\SegmentUpdateItem;
-use app\vk_ads_api\src\services\remarketing\services\segments\services\relations\SegmentRelationsService;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\segments\criterias\SegmentSelectionCriteria;
+use VkAdsPhpSdk\services\remarketing\services\segments\models\SegmentAddItem;
+use VkAdsPhpSdk\services\remarketing\services\segments\models\SegmentGetItem;
+use VkAdsPhpSdk\services\remarketing\services\segments\models\SegmentUpdateItem;
+use VkAdsPhpSdk\services\remarketing\services\segments\services\relations\SegmentRelationsService;
 
 class SegmentsService extends BaseService
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\components;
+namespace VkAdsPhpSdk\components;
 
-use app\vk_ads_api\src\exceptions\VkAdsApiException;
-use app\vk_ads_api\src\exceptions\VkAdsModelValidationException;
+use VkAdsPhpSdk\exceptions\VkAdsApiException;
+use VkAdsPhpSdk\exceptions\VkAdsModelValidationException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;

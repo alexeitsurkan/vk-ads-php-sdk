@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\models;
+namespace VkAdsPhpSdk\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class Targetings extends Model
 {

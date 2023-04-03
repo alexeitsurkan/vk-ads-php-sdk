@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\inapp_event_categories;
+namespace VkAdsPhpSdk\services\inapp_event_categories;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\inapp_event_categories\models\InAppEventCategories;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\inapp_event_categories\models\InAppEventCategories;
 
 class InappEventCategoriesService extends BaseService
 {

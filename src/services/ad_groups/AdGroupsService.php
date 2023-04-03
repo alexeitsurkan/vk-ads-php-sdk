@@ -1,14 +1,14 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_groups;
+namespace VkAdsPhpSdk\services\ad_groups;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\exceptions\VkAdsApiException;
-use app\vk_ads_api\src\services\ad_groups\criterias\AdGroupSelectionCriteria;
-use app\vk_ads_api\src\services\ad_groups\models\AdGroupAddItem;
-use app\vk_ads_api\src\services\ad_groups\models\AdGroupGetItem;
-use app\vk_ads_api\src\services\ad_groups\models\AdGroupMassAction;
-use app\vk_ads_api\src\services\ad_groups\models\AdGroupUpdateItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\exceptions\VkAdsApiException;
+use VkAdsPhpSdk\services\ad_groups\criterias\AdGroupSelectionCriteria;
+use VkAdsPhpSdk\services\ad_groups\models\AdGroupAddItem;
+use VkAdsPhpSdk\services\ad_groups\models\AdGroupGetItem;
+use VkAdsPhpSdk\services\ad_groups\models\AdGroupMassAction;
+use VkAdsPhpSdk\services\ad_groups\models\AdGroupUpdateItem;
 
 class AdGroupsService extends BaseService
 {

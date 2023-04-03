@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\apple_apps;
+namespace VkAdsPhpSdk\services\apple_apps;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\apple_apps\models\SkAdNetworkIdsAddItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\apple_apps\models\SkAdNetworkIdsAddItem;
 use GuzzleHttp\Psr7\Request;
 
 class AppleAppsService extends BaseService

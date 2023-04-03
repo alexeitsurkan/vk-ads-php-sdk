@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\mobile_app_users;
+namespace VkAdsPhpSdk\services\mobile_app_users;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\mobile_app_users\criterias\MobileAppSelectionCriteria;
-use app\vk_ads_api\src\services\mobile_app_users\models\MobileApps;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\mobile_app_users\criterias\MobileAppSelectionCriteria;
+use VkAdsPhpSdk\services\mobile_app_users\models\MobileApps;
 
 class MobileAppUsersService extends BaseService
 {

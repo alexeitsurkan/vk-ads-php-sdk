@@ -1,6 +1,6 @@
 <?php
 
-namespace app\vk_ads_api\src\components;
+namespace VkAdsPhpSdk\components;
 
 abstract class SelectionCriteria extends Model
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace app\vk_ads_api\src;
+namespace VkAdsPhpSdk;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\enum\GrandTypeEnum;
-use app\vk_ads_api\src\enum\ScopeAgencyClientEnum;
-use app\vk_ads_api\src\enum\ScopeClientEnum;
-use app\vk_ads_api\src\enum\ScopeManagerClientEnum;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\enum\GrandTypeEnum;
+use VkAdsPhpSdk\enum\ScopeAgencyClientEnum;
+use VkAdsPhpSdk\enum\ScopeClientEnum;
+use VkAdsPhpSdk\enum\ScopeManagerClientEnum;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 

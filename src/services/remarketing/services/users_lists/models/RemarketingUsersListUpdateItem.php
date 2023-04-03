@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\users_lists\models;
+namespace VkAdsPhpSdk\services\remarketing\services\users_lists\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class RemarketingUsersListUpdateItem extends Model
 {

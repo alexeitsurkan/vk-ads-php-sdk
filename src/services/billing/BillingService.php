@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\billing;
+namespace VkAdsPhpSdk\services\billing;
 
-use app\vk_ads_api\src\components\BaseService;
+use VkAdsPhpSdk\components\BaseService;
 
 class BillingService extends BaseService
 {

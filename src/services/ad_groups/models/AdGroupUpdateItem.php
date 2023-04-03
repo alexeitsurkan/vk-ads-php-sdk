@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_groups\models;
+namespace VkAdsPhpSdk\services\ad_groups\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\PricedGoal;
-use app\vk_ads_api\src\models\Targetings;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\PricedGoal;
+use VkAdsPhpSdk\models\Targetings;
 
 class AdGroupUpdateItem extends Model
 {

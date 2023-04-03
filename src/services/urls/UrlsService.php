@@ -1,11 +1,11 @@
 <?php
 
-namespace app\vk_ads_api\src\services\urls;
+namespace VkAdsPhpSdk\services\urls;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\exceptions\UnknownPropertyException;
-use app\vk_ads_api\src\services\urls\models\URLAddItem;
-use app\vk_ads_api\src\services\urls\models\URLGetItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\exceptions\UnknownPropertyException;
+use VkAdsPhpSdk\services\urls\models\URLAddItem;
+use VkAdsPhpSdk\services\urls\models\URLGetItem;
 use GuzzleHttp\Psr7\Request;
 
 class UrlsService extends BaseService

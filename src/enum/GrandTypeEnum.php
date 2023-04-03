@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\enum;
+namespace VkAdsPhpSdk\enum;
 
-use app\vk_ads_api\src\components\Enum;
+use VkAdsPhpSdk\components\Enum;
 
 class GrandTypeEnum extends Enum
 {

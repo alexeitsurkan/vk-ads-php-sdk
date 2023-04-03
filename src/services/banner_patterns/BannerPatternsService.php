@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\banner_patterns;
+namespace VkAdsPhpSdk\services\banner_patterns;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\banner_patterns\criterias\BannerPatternSelectionCriteria;
-use app\vk_ads_api\src\services\banner_patterns\models\BannerPattern;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\banner_patterns\criterias\BannerPatternSelectionCriteria;
+use VkAdsPhpSdk\services\banner_patterns\models\BannerPattern;
 
 class BannerPatternsService extends BaseService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\regions\criterias;
+namespace VkAdsPhpSdk\services\regions\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class RegionSelectionCriteria extends SelectionCriteria
 {

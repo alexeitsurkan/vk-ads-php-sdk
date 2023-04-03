@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\targetings_tree;
+namespace VkAdsPhpSdk\services\targetings_tree;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\models\TargetingsTree;
-use app\vk_ads_api\src\services\targetings_tree\criterias\TargetingsTreeSelectionCriteria;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\models\TargetingsTree;
+use VkAdsPhpSdk\services\targetings_tree\criterias\TargetingsTreeSelectionCriteria;
 use GuzzleHttp\Psr7\Request;
 
 class TargetingsTreeService extends BaseService

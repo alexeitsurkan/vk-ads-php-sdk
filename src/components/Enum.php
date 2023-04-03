@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\components;
+namespace VkAdsPhpSdk\components;
 
-use app\vk_ads_api\src\exceptions\EnumException;
+use VkAdsPhpSdk\exceptions\EnumException;
 use JsonSerializable;
 use ReflectionClass;
 

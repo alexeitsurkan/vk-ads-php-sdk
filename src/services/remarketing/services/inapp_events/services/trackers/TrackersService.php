@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\inapp_events\services\trackers;
+namespace VkAdsPhpSdk\services\remarketing\services\inapp_events\services\trackers;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\inapp_events\services\trackers\services\events\EventsService;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\inapp_events\services\trackers\services\events\EventsService;
 
 class TrackersService extends BaseService
 {

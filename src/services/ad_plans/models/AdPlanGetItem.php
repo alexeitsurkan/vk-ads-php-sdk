@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_plans\models;
+namespace VkAdsPhpSdk\services\ad_plans\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\PricedGoal;
-use app\vk_ads_api\src\services\ad_groups\models\AdGroup;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\PricedGoal;
+use VkAdsPhpSdk\services\ad_groups\models\AdGroup;
 
 class AdPlanGetItem extends Model
 {

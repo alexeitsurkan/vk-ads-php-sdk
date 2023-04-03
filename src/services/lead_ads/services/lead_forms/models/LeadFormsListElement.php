@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\lead_ads\services\lead_forms\models;
+namespace VkAdsPhpSdk\services\lead_ads\services\lead_forms\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class LeadFormsListElement extends Model
 {

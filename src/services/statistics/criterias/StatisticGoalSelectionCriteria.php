@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\statistics\criterias;
+namespace VkAdsPhpSdk\services\statistics\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
-use app\vk_ads_api\src\services\statistics\enum\StatisticAttributionEnum;
-use app\vk_ads_api\src\services\statistics\enum\StatisticConversionTypeEnum;
+use VkAdsPhpSdk\components\SelectionCriteria;
+use VkAdsPhpSdk\services\statistics\enum\StatisticAttributionEnum;
+use VkAdsPhpSdk\services\statistics\enum\StatisticConversionTypeEnum;
 
 class StatisticGoalSelectionCriteria extends SelectionCriteria
 {

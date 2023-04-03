@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\banner_fields\criterias;
+namespace VkAdsPhpSdk\services\banner_fields\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class BannerFieldSelectionCriteria extends SelectionCriteria
 {

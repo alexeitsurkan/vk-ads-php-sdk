@@ -1,11 +1,11 @@
 <?php
 
-namespace app\vk_ads_api\src\services\statistics\criterias;
+namespace VkAdsPhpSdk\services\statistics\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
-use app\vk_ads_api\src\services\statistics\enum\StatisticAscDescEnum;
-use app\vk_ads_api\src\services\statistics\enum\StatisticAttributionEnum;
-use app\vk_ads_api\src\services\statistics\enum\StatisticMetricEnum;
+use VkAdsPhpSdk\components\SelectionCriteria;
+use VkAdsPhpSdk\services\statistics\enum\StatisticAscDescEnum;
+use VkAdsPhpSdk\services\statistics\enum\StatisticAttributionEnum;
+use VkAdsPhpSdk\services\statistics\enum\StatisticMetricEnum;
 
 class StatisticSelectionCriteria extends SelectionCriteria
 {

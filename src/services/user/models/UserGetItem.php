@@ -1,12 +1,12 @@
 <?php
 
-namespace app\vk_ads_api\src\services\user\models;
+namespace VkAdsPhpSdk\services\user\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\AdditionalUserInfo;
-use app\vk_ads_api\src\models\Agency;
-use app\vk_ads_api\src\models\UserEmailSettings;
-use app\vk_ads_api\src\models\UserRegions;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\AdditionalUserInfo;
+use VkAdsPhpSdk\models\Agency;
+use VkAdsPhpSdk\models\UserEmailSettings;
+use VkAdsPhpSdk\models\UserRegions;
 
 class UserGetItem extends Model
 {

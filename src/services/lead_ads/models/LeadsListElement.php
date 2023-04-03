@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\lead_ads\models;
+namespace VkAdsPhpSdk\services\lead_ads\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\LeadAnswer;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\LeadAnswer;
 
 class LeadsListElement extends Model
 {

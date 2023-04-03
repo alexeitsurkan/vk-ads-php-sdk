@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\counters;
+namespace VkAdsPhpSdk\services\remarketing\services\counters;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\counters\criterias\CounterSelectionCriteria;
-use app\vk_ads_api\src\services\remarketing\services\counters\services\counter_goals\CounterGoalService;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\counters\criterias\CounterSelectionCriteria;
+use VkAdsPhpSdk\services\remarketing\services\counters\services\counter_goals\CounterGoalService;
 
 class CountersService extends BaseService
 {

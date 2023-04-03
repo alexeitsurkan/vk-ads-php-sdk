@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\local_geo;
+namespace VkAdsPhpSdk\services\remarketing\services\local_geo;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\local_geo\models\LocalGeoAddItem;
-use app\vk_ads_api\src\services\remarketing\services\local_geo\models\LocalGeoGetItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\local_geo\models\LocalGeoAddItem;
+use VkAdsPhpSdk\services\remarketing\services\local_geo\models\LocalGeoGetItem;
 
 class LocalGeosService extends BaseService
 {

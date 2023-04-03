@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_plans\criterias;
+namespace VkAdsPhpSdk\services\ad_plans\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class AdPlanSelectionCriteria extends SelectionCriteria
 {

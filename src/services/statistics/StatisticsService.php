@@ -1,14 +1,14 @@
 <?php
 
-namespace app\vk_ads_api\src\services\statistics;
+namespace VkAdsPhpSdk\services\statistics;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\exceptions\VkAdsApiException;
-use app\vk_ads_api\src\services\statistics\criterias\StatisticGoalSelectionCriteria;
-use app\vk_ads_api\src\services\statistics\criterias\StatisticInappSelectionCriteria;
-use app\vk_ads_api\src\services\statistics\criterias\StatisticOfflineConversionsSelectionCriteria;
-use app\vk_ads_api\src\services\statistics\criterias\StatisticSelectionCriteria;
-use app\vk_ads_api\src\services\statistics\enum\StatisticObjectEnum;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\exceptions\VkAdsApiException;
+use VkAdsPhpSdk\services\statistics\criterias\StatisticGoalSelectionCriteria;
+use VkAdsPhpSdk\services\statistics\criterias\StatisticInappSelectionCriteria;
+use VkAdsPhpSdk\services\statistics\criterias\StatisticOfflineConversionsSelectionCriteria;
+use VkAdsPhpSdk\services\statistics\criterias\StatisticSelectionCriteria;
+use VkAdsPhpSdk\services\statistics\enum\StatisticObjectEnum;
 
 class StatisticsService extends BaseService
 {

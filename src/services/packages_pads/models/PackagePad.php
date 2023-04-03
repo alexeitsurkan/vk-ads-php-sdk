@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\packages_pads\models;
+namespace VkAdsPhpSdk\services\packages_pads\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class PackagePad extends Model
 {

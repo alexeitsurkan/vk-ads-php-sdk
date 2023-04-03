@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\goals\models;
+namespace VkAdsPhpSdk\services\goals\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\CounterGoal;
-use app\vk_ads_api\src\models\Goal;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\CounterGoal;
+use VkAdsPhpSdk\models\Goal;
 
 class Goals extends Model
 {

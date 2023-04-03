@@ -1,13 +1,13 @@
 <?php
 
-namespace app\vk_ads_api\src\services\sharing_keys;
+namespace VkAdsPhpSdk\services\sharing_keys;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\sharing_keys\criterias\SharingKeySelectionCriteria;
-use app\vk_ads_api\src\services\sharing_keys\models\SharingKey;
-use app\vk_ads_api\src\services\sharing_keys\models\SharingKeyAddItem;
-use app\vk_ads_api\src\services\sharing_keys\models\SharingKeyGetItem;
-use app\vk_ads_api\src\services\sharing_keys\models\SharingKeyUser;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\sharing_keys\criterias\SharingKeySelectionCriteria;
+use VkAdsPhpSdk\services\sharing_keys\models\SharingKey;
+use VkAdsPhpSdk\services\sharing_keys\models\SharingKeyAddItem;
+use VkAdsPhpSdk\services\sharing_keys\models\SharingKeyGetItem;
+use VkAdsPhpSdk\services\sharing_keys\models\SharingKeyUser;
 
 class SharingKeysService extends BaseService
 {

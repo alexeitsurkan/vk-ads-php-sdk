@@ -1,14 +1,14 @@
 <?php
 
-namespace app\vk_ads_api\src\services\ad_plans;
+namespace VkAdsPhpSdk\services\ad_plans;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\exceptions\VkAdsApiException;
-use app\vk_ads_api\src\services\ad_plans\criterias\AdPlanSelectionCriteria;
-use app\vk_ads_api\src\services\ad_plans\models\AdPlanAddItem;
-use app\vk_ads_api\src\services\ad_plans\models\AdPlanGetItem;
-use app\vk_ads_api\src\services\ad_plans\models\AdPlanMassAction;
-use app\vk_ads_api\src\services\ad_plans\models\AdPlanUpdateItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\exceptions\VkAdsApiException;
+use VkAdsPhpSdk\services\ad_plans\criterias\AdPlanSelectionCriteria;
+use VkAdsPhpSdk\services\ad_plans\models\AdPlanAddItem;
+use VkAdsPhpSdk\services\ad_plans\models\AdPlanGetItem;
+use VkAdsPhpSdk\services\ad_plans\models\AdPlanMassAction;
+use VkAdsPhpSdk\services\ad_plans\models\AdPlanUpdateItem;
 
 class AdPlansService extends BaseService
 {

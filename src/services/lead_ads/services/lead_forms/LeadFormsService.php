@@ -1,14 +1,14 @@
 <?php
 
-namespace app\vk_ads_api\src\services\lead_ads\services\lead_forms;
+namespace VkAdsPhpSdk\services\lead_ads\services\lead_forms;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\criterias\LeadFormSelectionCriteria;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\criterias\LeadsExportSelectionCriteria;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\enum\LeadsExportFormatEnum;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\models\LeadFormGetItem;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\models\LeadFormsListElement;
-use app\vk_ads_api\src\services\lead_ads\services\lead_forms\models\LeadFormUpdateItem;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias\LeadFormSelectionCriteria;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias\LeadsExportSelectionCriteria;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\enum\LeadsExportFormatEnum;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\models\LeadFormGetItem;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\models\LeadFormsListElement;
+use VkAdsPhpSdk\services\lead_ads\services\lead_forms\models\LeadFormUpdateItem;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 

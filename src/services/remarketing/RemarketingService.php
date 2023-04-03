@@ -1,13 +1,13 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing;
+namespace VkAdsPhpSdk\services\remarketing;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\services\remarketing\services\counters\CountersService;
-use app\vk_ads_api\src\services\remarketing\services\inapp_events\InAppEventsService;
-use app\vk_ads_api\src\services\remarketing\services\local_geo\LocalGeosService;
-use app\vk_ads_api\src\services\remarketing\services\segments\SegmentsService;
-use app\vk_ads_api\src\services\remarketing\services\users_lists\UsersListService;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\services\remarketing\services\counters\CountersService;
+use VkAdsPhpSdk\services\remarketing\services\inapp_events\InAppEventsService;
+use VkAdsPhpSdk\services\remarketing\services\local_geo\LocalGeosService;
+use VkAdsPhpSdk\services\remarketing\services\segments\SegmentsService;
+use VkAdsPhpSdk\services\remarketing\services\users_lists\UsersListService;
 
 class RemarketingService extends BaseService
 {

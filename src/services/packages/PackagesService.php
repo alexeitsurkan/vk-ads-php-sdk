@@ -1,9 +1,9 @@
 <?php
 
-namespace app\vk_ads_api\src\services\packages;
+namespace VkAdsPhpSdk\services\packages;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\models\Package;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\models\Package;
 use GuzzleHttp\Psr7\Request;
 
 class PackagesService extends BaseService

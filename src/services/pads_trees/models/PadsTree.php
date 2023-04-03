@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\pads_trees\models;
+namespace VkAdsPhpSdk\services\pads_trees\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class PadsTree extends Model
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\content\models;
+namespace VkAdsPhpSdk\services\content\models;
 
-use app\vk_ads_api\src\components\Model;
+use VkAdsPhpSdk\components\Model;
 
 class Content extends Model
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace app\vk_ads_api\src\services\banner_patterns\criterias;
+namespace VkAdsPhpSdk\services\banner_patterns\criterias;
 
-use app\vk_ads_api\src\components\SelectionCriteria;
+use VkAdsPhpSdk\components\SelectionCriteria;
 
 class BannerPatternSelectionCriteria extends SelectionCriteria
 {

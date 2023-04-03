@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\content;
+namespace VkAdsPhpSdk\services\content;
 
-use app\vk_ads_api\src\services\content\models\Content;
+use VkAdsPhpSdk\services\content\models\Content;
 use GuzzleHttp\Psr7\Request;
-use app\vk_ads_api\src\components\BaseService;
+use VkAdsPhpSdk\components\BaseService;
 
 class ContentService extends BaseService
 {

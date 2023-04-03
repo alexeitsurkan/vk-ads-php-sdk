@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\remarketing\services\users_lists\models;
+namespace VkAdsPhpSdk\services\remarketing\services\users_lists\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\RemarketingUsersListHistory;
-use app\vk_ads_api\src\models\RemarketingUsersListUser;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\RemarketingUsersListHistory;
+use VkAdsPhpSdk\models\RemarketingUsersListUser;
 
 class RemarketingUsersListGetItem extends Model
 {

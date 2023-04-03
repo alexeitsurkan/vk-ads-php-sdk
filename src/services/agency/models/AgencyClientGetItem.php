@@ -1,11 +1,11 @@
 <?php
 
-namespace app\vk_ads_api\src\services\agency\models;
+namespace VkAdsPhpSdk\services\agency\models;
 
-use app\vk_ads_api\src\components\Model;
-use app\vk_ads_api\src\models\ClientOrdJuridical;
-use app\vk_ads_api\src\models\ClientOrdPhysical;
-use app\vk_ads_api\src\models\UserClient;
+use VkAdsPhpSdk\components\Model;
+use VkAdsPhpSdk\models\ClientOrdJuridical;
+use VkAdsPhpSdk\models\ClientOrdPhysical;
+use VkAdsPhpSdk\models\UserClient;
 
 class AgencyClientGetItem extends Model
 {

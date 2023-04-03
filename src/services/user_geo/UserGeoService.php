@@ -1,10 +1,10 @@
 <?php
 
-namespace app\vk_ads_api\src\services\user_geo;
+namespace VkAdsPhpSdk\services\user_geo;
 
-use app\vk_ads_api\src\components\BaseService;
-use app\vk_ads_api\src\models\UserGeo;
-use app\vk_ads_api\src\services\user_geo\criterias\UserGeoSelectionCriteria;
+use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\models\UserGeo;
+use VkAdsPhpSdk\services\user_geo\criterias\UserGeoSelectionCriteria;
 
 class UserGeoService extends BaseService
 {
