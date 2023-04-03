@@ -35,7 +35,7 @@ class VkAdsOAuth extends BaseService
             'state'         => $state,
             'client_id'     => $client_id,
             'redirect_uri'  => $redirect_uri,
-            'scope'         => $scope
+            'scope'         => implode(',',$scope)
         ]);
         return $uri->__toString();
     }
