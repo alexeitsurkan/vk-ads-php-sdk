@@ -139,7 +139,7 @@ abstract class BaseService
 
     protected function getBody(array|Model $data): string
     {
-        $json = json_encode($data, JSON_UNESCAPED_UNICODE);
+        $json = json_encode(['body' => $data], JSON_UNESCAPED_UNICODE);
         return preg_replace('/,\s*"[^"]+":null|"[^"]+":null,?/', '', $json);
     }
 
