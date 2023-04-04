@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\components;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\exceptions\VkAdsApiException;
 use VkAdsPhpSdk\exceptions\VkAdsModelValidationException;
 use GuzzleHttp\Client;
@@ -16,7 +17,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 abstract class BaseService
 {
     protected const BASE_URI = 'https://ads.vk.com/';
-    
+
     /**
      * @var JsonMapper
      */
@@ -53,10 +54,9 @@ abstract class BaseService
             ? Uri::withQueryValues(new Uri($uri), $selectionCriteria())
             : $uri;
 
-        $request                 = new Request('get', $uri, $this->getHeaders());
-        $response                = $this->call($request);
-        if($class){
-            $response->body['items'] = $this->mapArray($response->body['items'], $class);   
+        $response = $this->call('get', $uri, [RequestOptions::HEADERS => $this->getHeaders()]);
+        if ($class) {
+            $response->body['items'] = $this->mapArray($response->body['items'], $class);
         }
 
         return $response->body;
@@ -65,10 +65,14 @@ abstract class BaseService
     protected function doPost(string $uri, Model|array $model): array
     {
 //        $this->validate([$model]);
-        $request  = new Request('post', $uri, $this->getHeaders(), $this->getBody($model));
-        $response = $this->call($request);
+        $options = [
+            RequestOptions::HEADERS => $this->getHeaders(),
+            RequestOptions::BODY    => $this->getBody($model)
+        ];
 
-        return $response->body;
+        return $this
+            ->call('post', $uri, $options)
+            ->body;
     }
 
     /**
@@ -80,8 +84,11 @@ abstract class BaseService
     protected function doMassUpdate(string $uri, array $models): bool
     {
 //        $this->validate($models);
-        $request = new Request('post', $uri, $this->getHeaders(), $this->getBody($models));
-        $this->call($request);
+        $options = [
+            RequestOptions::HEADERS => $this->getHeaders(),
+            RequestOptions::BODY    => $this->getBody($models)
+        ];
+        $this->call('post', $uri, $options);
 
         return true;
     }
@@ -93,22 +100,24 @@ abstract class BaseService
      */
     protected function doDelete(string $uri): bool
     {
-        $uri     = new Uri($uri);
-        $request = new Request('delete', $uri, $this->getHeaders());
-        $this->call($request);
+        $this->call('delete', $uri, [
+            RequestOptions::HEADERS => $this->getHeaders(),
+        ]);
 
         return true;
     }
 
     /**
-     * @param $request
+     * @param string $method
+     * @param string $uri
+     * @param array $options
      * @return VkAdsApiResponse
      * @throws VkAdsApiException
      */
-    protected function call($request): VkAdsApiResponse
+    protected function call(string $method, string $uri, array $options): VkAdsApiResponse
     {
         try {
-            $httpResponse = $this->http_client->send($request);
+            $httpResponse = $this->http_client->send(new Request($method, $uri), $options);
         } catch (GuzzleException $exception) {
             throw new VkAdsApiException(
                 $exception->getMessage(),
@@ -139,7 +148,7 @@ abstract class BaseService
 
     protected function getBody(array|Model $data): string
     {
-        $json = json_encode(['body' => $data], JSON_UNESCAPED_UNICODE);
+        $json = json_encode($data, JSON_UNESCAPED_UNICODE);
         return preg_replace('/,\s*"[^"]+":null|"[^"]+":null,?/', '', $json);
     }
 
