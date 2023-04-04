@@ -59,6 +59,26 @@ class VkAdsOAuth extends BaseService
         return $response->body;
     }
 
+    public function codeInfo(
+        string $client_id,
+        string $client_secret,
+        string $code
+    )
+    {
+        $body     = $this->getBody(
+            [
+                'grant_type' => GrandTypeEnum::AUTHORIZATION_CODE,
+                'client_id'  => $client_id,
+                'code'       => $code,
+                'client_secret'  => $client_secret
+            ]
+        );
+        $request  = new Request('POST', '/api/v2/oauth2/code_info.json', $this->headers, $body);
+        $response = $this->call($request);
+
+        return $response->body;
+    }
+
     public function getClientCredentials(
         string $client_id,
         string $client_secret,
