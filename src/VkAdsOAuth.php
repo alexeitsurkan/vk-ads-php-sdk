@@ -16,7 +16,7 @@ class VkAdsOAuth extends BaseService
     {
     }
 
-    private array  $headers = [
+    private array $headers = [
         'Content-Type' => 'application/x-www-form-urlencoded'
     ];
 
@@ -35,9 +35,28 @@ class VkAdsOAuth extends BaseService
             'state'         => $state,
             'client_id'     => $client_id,
             'redirect_uri'  => $redirect_uri,
-            'scope'         => implode(',',$scope)
+            'scope'         => implode(',', $scope)
         ]);
         return $uri->__toString();
+    }
+
+    public function authorization(
+        string $client_id,
+        string $code,
+        bool $permanent = false
+    ): array {
+        $body     = $this->getBody(
+            [
+                'grant_type' => GrandTypeEnum::AUTHORIZATION_CODE,
+                'client_id'  => $client_id,
+                'code'       => $code,
+                'permanent'  => $permanent
+            ]
+        );
+        $request  = new Request('POST', '/api/v2/oauth2/token.json', $this->headers, $body);
+        $response = $this->call($request);
+
+        return $response->body;
     }
 
     public function getClientCredentials(
@@ -93,7 +112,7 @@ class VkAdsOAuth extends BaseService
                 'client_id'        => $client_id,
                 'client_secret'    => $client_secret,
                 'agency_client_id' => $agency_client_id,
-                'access_token' => $agency_access_token,
+                'access_token'     => $agency_access_token,
                 'permanent'        => $permanent
             ]
         );
