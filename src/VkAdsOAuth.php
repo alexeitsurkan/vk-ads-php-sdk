@@ -63,7 +63,6 @@ class VkAdsOAuth extends BaseService
     {
         $body     = $this->getBody(
             [
-                'grant_type' => GrandTypeEnum::AUTHORIZATION_CODE,
                 'client_id'  => $client_id,
                 'code'       => $code,
                 'client_secret'  => $client_secret
