@@ -4,6 +4,7 @@ namespace VkAdsPhpSdk\services\banners\models;
 
 use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\ModerationReason;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class BannerAddItem extends Model
 {

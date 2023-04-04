@@ -5,6 +5,7 @@ namespace VkAdsPhpSdk\services\ad_groups\models;
 use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\PricedGoal;
 use VkAdsPhpSdk\models\Targetings;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class AdGroupGetItem extends Model
 {

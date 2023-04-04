@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\services\urls;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\exceptions\UnknownPropertyException;
 use VkAdsPhpSdk\services\urls\models\URLAddItem;
@@ -15,9 +16,8 @@ class UrlsService extends BaseService
         if(empty($ids)){
             throw new UnknownPropertyException();
         }
-        
-        $request        = new Request('get', self::getUri(implode(',',$ids)), $this->getHeaders());
-        $response       = $this->call($request);
+
+        $response       = $this->call('get', self::getUri(implode(',',$ids)),[RequestOptions::HEADERS => $this->getHeaders()]);
         return $this->mapArray($response->body['items'], URLGetItem::class);
     }
 

@@ -3,6 +3,7 @@
 namespace VkAdsPhpSdk\services\banners\models;
 
 use VkAdsPhpSdk\components\Model;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class BannerMassAction extends Model
 {

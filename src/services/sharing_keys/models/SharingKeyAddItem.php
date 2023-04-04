@@ -5,6 +5,7 @@ namespace VkAdsPhpSdk\services\sharing_keys\models;
 use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\NestedUser;
 use VkAdsPhpSdk\models\SharingKeySource;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class SharingKeyAddItem extends Model
 {

@@ -6,6 +6,7 @@ use VkAdsPhpSdk\components\SelectionCriteria;
 use VkAdsPhpSdk\services\statistics\enum\StatisticAscDescEnum;
 use VkAdsPhpSdk\services\statistics\enum\StatisticAttributionEnum;
 use VkAdsPhpSdk\services\statistics\enum\StatisticMetricEnum;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class StatisticSelectionCriteria extends SelectionCriteria
 {

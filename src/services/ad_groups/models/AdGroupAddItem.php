@@ -6,6 +6,7 @@ use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\PricedGoal;
 use VkAdsPhpSdk\models\Targetings;
 use VkAdsPhpSdk\services\banners\models\BannerGetItem;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class AdGroupAddItem extends Model
 {

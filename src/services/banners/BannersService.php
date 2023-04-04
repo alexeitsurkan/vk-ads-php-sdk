@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\services\banners;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\exceptions\VkAdsApiException;
 use VkAdsPhpSdk\services\banners\criterias\BannerSelectionCriteria;
@@ -79,8 +80,11 @@ class BannersService extends BaseService
             $models[] = $obj;
         }
         $uri = self::getUri('remoderate').'?fields=id,remoderated';
-        $request  = new Request('post', $uri, $this->getHeaders(), $this->getBody($models));
-        $response = $this->call($request);
+        $options = [
+            RequestOptions::HEADERS => $this->getHeaders(),
+            RequestOptions::BODY => $this->getBody($models)
+        ];
+        $response = $this->call('post', $uri, $options);
 
         return $this->mapArray($response->body['banners'], BannerRemoderateGetItem::class);
     }

@@ -2,8 +2,8 @@
 
 namespace VkAdsPhpSdk\services\ad_groups\models;
 
-
 use VkAdsPhpSdk\components\Model;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class AdGroupMassAction extends Model
 {

@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\services\lead_ads\services\lead_forms;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias\LeadFormSelectionCriteria;
 use VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias\LeadsExportSelectionCriteria;
@@ -36,16 +37,14 @@ class LeadFormsService extends BaseService
     public function archive(array $ids):array
     {
         $uri      = '/api/v1/lead_ads/lead_forms/archive?_form_ids__in=' . implode(',', $ids);
-        $request  = new Request('post', $uri, $this->getHeaders());
-        $response = $this->call($request);
+        $response = $this->call('post', $uri,[RequestOptions::HEADERS => $this->getHeaders()]);
         return $this->mapArray($response->body['items'], LeadFormGetItem::class);
     }
 
     public function unarchive($ids):array
     {
         $uri      = '/api/v1/lead_ads/lead_forms/unarchive?_form_ids__in=' . implode(',', $ids);
-        $request  = new Request('post', $uri, $this->getHeaders());
-        $response = $this->call($request);
+        $response = $this->call('post', $uri, [RequestOptions::HEADERS => $this->getHeaders()]);
         return $this->mapArray($response->body['items'], LeadFormGetItem::class);
     }
 
@@ -58,9 +57,8 @@ class LeadFormsService extends BaseService
         $uri = $selectionCriteria
             ? Uri::withQueryValues(new Uri($uri), $selectionCriteria())
             : $uri;
-        
-        $request  = new Request('post', $uri, $this->getHeaders());
-        $response = $this->call($request);
+
+        $response = $this->call('post', $uri,[RequestOptions::HEADERS => $this->getHeaders()]);
 
         return $response->body;
     }

@@ -5,6 +5,7 @@ namespace VkAdsPhpSdk\services\ad_plans\models;
 use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\PricedGoal;
 use VkAdsPhpSdk\services\ad_groups\models\AdGroup;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class AdPlanAddItem extends Model
 {

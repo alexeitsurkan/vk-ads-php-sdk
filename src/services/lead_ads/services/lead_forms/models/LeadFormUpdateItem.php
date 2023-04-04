@@ -2,8 +2,8 @@
 
 namespace VkAdsPhpSdk\services\lead_ads\services\lead_forms\models;
 
-
 use VkAdsPhpSdk\components\Model;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class LeadFormUpdateItem extends Model
 {

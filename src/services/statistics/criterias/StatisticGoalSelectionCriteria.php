@@ -5,6 +5,7 @@ namespace VkAdsPhpSdk\services\statistics\criterias;
 use VkAdsPhpSdk\components\SelectionCriteria;
 use VkAdsPhpSdk\services\statistics\enum\StatisticAttributionEnum;
 use VkAdsPhpSdk\services\statistics\enum\StatisticConversionTypeEnum;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class StatisticGoalSelectionCriteria extends SelectionCriteria
 {

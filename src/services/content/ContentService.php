@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\services\content;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\services\content\models\Content;
 use GuzzleHttp\Psr7\Request;
 use VkAdsPhpSdk\components\BaseService;
@@ -13,8 +14,10 @@ class ContentService extends BaseService
         //todo a.curkan доделать https://ads.vk.com/doc/api/resource/Content
 //        $headers = $this->getHeaders();
 //        $headers['Content-Type'] = 'multipart/form-data';
-//        $request = new Request('post', self::getUri($content_type), $headers, );
-//        $response = $this->call($request);
+//        $options = [
+//            RequestOptions::HEADERS => $headers,
+//        ];
+//        $response = $this->call('post', self::getUri($content_type), $options);
 //        $response->body['items'] = $this->mapArray($response->body['items'], Content::class);
 //
 //        return $response->body;

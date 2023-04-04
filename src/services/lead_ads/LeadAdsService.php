@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\services\lead_ads;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\lead_ads\criterias\LeadAdsSelectionCriteria;
 use VkAdsPhpSdk\services\lead_ads\models\LeadsListElement;
@@ -33,7 +34,8 @@ class LeadAdsService extends BaseService
 //       $uri = "/api/v1/lead_ads/upload_image/$role";
 //       $headers = $this->getHeaders();
 //       $headers['Content-Type'] = 'multipart/form-data';
-//        $request  = new Request('post', $uri, $headers);
-//        $response = $this->call($request);
+//        $response = $this->call('post', $uri,[
+//RequestOptions::HEADERS => $headers
+//]);
     }
 }

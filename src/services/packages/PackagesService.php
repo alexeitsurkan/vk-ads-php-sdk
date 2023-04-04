@@ -2,16 +2,15 @@
 
 namespace VkAdsPhpSdk\services\packages;
 
+use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\models\Package;
-use GuzzleHttp\Psr7\Request;
 
 class PackagesService extends BaseService
 {
     public function get(): array
     {
-        $request                 = new Request('get', '/api/v2/packages.json', $this->getHeaders());
-        $response                = $this->call($request);
+        $response                = $this->call('get', '/api/v2/packages.json',[RequestOptions::HEADERS => $this->getHeaders()]);
         $response->body['items'] = $this->mapArray($response->body['items'], Package::class);
 
         return $response->body;

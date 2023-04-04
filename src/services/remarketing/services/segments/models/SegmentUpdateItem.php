@@ -4,6 +4,7 @@ namespace VkAdsPhpSdk\services\remarketing\services\segments\models;
 
 use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\SegmentUser;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class SegmentUpdateItem extends Model
 {
