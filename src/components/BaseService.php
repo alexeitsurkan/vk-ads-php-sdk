@@ -29,7 +29,7 @@ abstract class BaseService
 
     protected Client $http_client;
 
-    public function __construct(protected $token)
+    public function __construct(protected $token = null)
     {
         $this->http_client = new Client(['base_uri' => self::BASE_URI]);
     }

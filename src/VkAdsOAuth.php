@@ -12,10 +12,6 @@ use GuzzleHttp\Psr7\Uri;
 
 class VkAdsOAuth extends BaseService
 {
-    public function __construct()
-    {
-    }
-
     private array $headers = [
         'Content-Type' => 'application/x-www-form-urlencoded'
     ];
@@ -27,7 +23,7 @@ class VkAdsOAuth extends BaseService
      * @param null $redirect_uri
      * @return string
      */
-    public function getAuthorizeUrl($client_id, $state, $scope, $redirect_uri = null): string
+    public static function getAuthorizeUrl($client_id, $state, $scope, $redirect_uri = null): string
     {
         $uri = Uri::withQueryValues(new Uri(self::BASE_URI . 'hq/settings/access'), [
             'action'        => 'oauth2',
