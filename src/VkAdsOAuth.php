@@ -24,10 +24,10 @@ class VkAdsOAuth extends BaseService
      * @param $client_id
      * @param $state
      * @param string[]|ScopeAgencyClientEnum[]|ScopeClientEnum[]|ScopeManagerClientEnum[] $scope
-     * @param $redirect_uri
+     * @param null $redirect_uri
      * @return string
      */
-    public function getAuthorizeUrl($client_id, $state, $scope, $redirect_uri): string
+    public function getAuthorizeUrl($client_id, $state, $scope, $redirect_uri = null): string
     {
         $uri = Uri::withQueryValues(new Uri(self::BASE_URI . 'hq/settings/access'), [
             'action'        => 'oauth2',
