@@ -27,7 +27,10 @@ abstract class BaseService
      */
     private $validator;
 
-    protected Client $http_client;
+    /**
+     * @var Client
+     */
+    protected $http_client;
 
     public function __construct(protected $token)
     {
