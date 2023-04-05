@@ -3,7 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\SegmentUser;
 
 class SegmentGetItem extends Model
 {

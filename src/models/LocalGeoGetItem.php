@@ -3,7 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\LocalGeoPoint;
 
 class LocalGeoGetItem extends Model
 {

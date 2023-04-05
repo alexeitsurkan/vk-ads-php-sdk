@@ -3,8 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\NestedUser;
-use VkAdsPhpSdk\models\SharingKeySource;
 
 class SharingKeyGetItem extends Model
 {

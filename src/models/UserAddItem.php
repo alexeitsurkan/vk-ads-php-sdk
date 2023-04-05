@@ -3,10 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\AdditionalUserInfo;
-use VkAdsPhpSdk\models\Agency;
-use VkAdsPhpSdk\models\UserEmailSettings;
-use VkAdsPhpSdk\models\UserRegions;
 
 class UserAddItem extends Model
 {
@@ -22,8 +18,7 @@ class UserAddItem extends Model
     public $additional_info;
 
     /**
-     * @var UserEmailSettings
-     * @Assert\Valid()
+     * @var UserEmailSettings[]
      */
     public $email_settings;
 

@@ -3,7 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\LeadAnswer;
 
 class LeadsListElement extends Model
 {

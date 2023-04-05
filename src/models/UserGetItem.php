@@ -3,10 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\AdditionalUserInfo;
-use VkAdsPhpSdk\models\Agency;
-use VkAdsPhpSdk\models\UserEmailSettings;
-use VkAdsPhpSdk\models\UserRegions;
 
 class UserGetItem extends Model
 {

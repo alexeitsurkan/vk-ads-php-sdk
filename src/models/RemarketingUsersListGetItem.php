@@ -3,8 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\RemarketingUsersListHistory;
-use VkAdsPhpSdk\models\RemarketingUsersListUser;
 
 class RemarketingUsersListGetItem extends Model
 {

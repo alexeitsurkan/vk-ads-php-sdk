@@ -3,7 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\SegmentUser;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class SegmentAddItem extends Model

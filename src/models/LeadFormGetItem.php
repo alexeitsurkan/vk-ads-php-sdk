@@ -2,7 +2,6 @@
 
 namespace VkAdsPhpSdk\models;
 
-
 use VkAdsPhpSdk\components\Model;
 
 class LeadFormGetItem extends Model
