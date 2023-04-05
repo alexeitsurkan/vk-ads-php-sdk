@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\services\mobile_app_users;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\mobile_app_users\criterias\MobileAppSelectionCriteria;
-use VkAdsPhpSdk\services\mobile_app_users\models\MobileApps;
+use VkAdsPhpSdkmodels\MobileApps;
 
 class MobileAppUsersService extends BaseService
 {

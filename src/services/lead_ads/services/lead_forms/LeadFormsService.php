@@ -7,9 +7,9 @@ use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias\LeadFormSelectionCriteria;
 use VkAdsPhpSdk\services\lead_ads\services\lead_forms\criterias\LeadsExportSelectionCriteria;
 use VkAdsPhpSdk\services\lead_ads\services\lead_forms\enum\LeadsExportFormatEnum;
-use VkAdsPhpSdk\services\lead_ads\services\lead_forms\models\LeadFormGetItem;
-use VkAdsPhpSdk\services\lead_ads\services\lead_forms\models\LeadFormsListElement;
-use VkAdsPhpSdk\services\lead_ads\services\lead_forms\models\LeadFormUpdateItem;
+use VkAdsPhpSdkmodels\LeadFormGetItem;
+use VkAdsPhpSdkmodels\LeadFormsListElement;
+use VkAdsPhpSdkmodels\LeadFormUpdateItem;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
 

@@ -5,10 +5,10 @@ namespace VkAdsPhpSdk\services\ad_plans;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\exceptions\VkAdsApiException;
 use VkAdsPhpSdk\services\ad_plans\criterias\AdPlanSelectionCriteria;
-use VkAdsPhpSdk\services\ad_plans\models\AdPlanAddItem;
-use VkAdsPhpSdk\services\ad_plans\models\AdPlanGetItem;
-use VkAdsPhpSdk\services\ad_plans\models\AdPlanMassAction;
-use VkAdsPhpSdk\services\ad_plans\models\AdPlanUpdateItem;
+use VkAdsPhpSdkmodels\AdPlanAddItem;
+use VkAdsPhpSdkmodels\AdPlanGetItem;
+use VkAdsPhpSdkmodels\AdPlanMassAction;
+use VkAdsPhpSdkmodels\AdPlanUpdateItem;
 
 class AdPlansService extends BaseService
 {

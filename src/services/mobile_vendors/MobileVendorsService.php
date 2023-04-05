@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\mobile_vendors;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdk\services\mobile_vendors\models\MobileVendors;
+use VkAdsPhpSdkmodels\MobileVendors;
 
 class MobileVendorsService extends BaseService
 {

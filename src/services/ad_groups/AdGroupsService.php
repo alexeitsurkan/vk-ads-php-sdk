@@ -5,10 +5,10 @@ namespace VkAdsPhpSdk\services\ad_groups;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\exceptions\VkAdsApiException;
 use VkAdsPhpSdk\services\ad_groups\criterias\AdGroupSelectionCriteria;
-use VkAdsPhpSdk\services\ad_groups\models\AdGroupAddItem;
-use VkAdsPhpSdk\services\ad_groups\models\AdGroupGetItem;
-use VkAdsPhpSdk\services\ad_groups\models\AdGroupMassAction;
-use VkAdsPhpSdk\services\ad_groups\models\AdGroupUpdateItem;
+use VkAdsPhpSdkmodels\AdGroupAddItem;
+use VkAdsPhpSdkmodels\AdGroupGetItem;
+use VkAdsPhpSdkmodels\AdGroupMassAction;
+use VkAdsPhpSdkmodels\AdGroupUpdateItem;
 
 class AdGroupsService extends BaseService
 {

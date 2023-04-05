@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\inapp_event_categories;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdk\services\inapp_event_categories\models\InAppEventCategories;
+use VkAdsPhpSdkmodels\InAppEventCategories;
 
 class InappEventCategoriesService extends BaseService
 {

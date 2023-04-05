@@ -6,11 +6,11 @@ use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\exceptions\VkAdsApiException;
 use VkAdsPhpSdk\services\banners\criterias\BannerSelectionCriteria;
-use VkAdsPhpSdk\services\banners\models\BannerAddItem;
-use VkAdsPhpSdk\services\banners\models\BannerGetItem;
-use VkAdsPhpSdk\services\banners\models\BannerMassAction;
-use VkAdsPhpSdk\services\banners\models\BannerRemoderateGetItem;
-use VkAdsPhpSdk\services\banners\models\BannerUpdateItem;
+use VkAdsPhpSdkmodels\BannerAddItem;
+use VkAdsPhpSdkmodels\BannerGetItem;
+use VkAdsPhpSdkmodels\BannerMassAction;
+use VkAdsPhpSdkmodels\BannerRemoderateGetItem;
+use VkAdsPhpSdkmodels\BannerUpdateItem;
 use GuzzleHttp\Psr7\Request;
 
 class BannersService extends BaseService

@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\mobile_operators;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdk\services\mobile_operators\models\MobileOperator;
+use VkAdsPhpSdkmodels\MobileOperator;
 
 class MobileOperatorsService extends BaseService
 {

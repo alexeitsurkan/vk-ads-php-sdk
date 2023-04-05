@@ -5,8 +5,8 @@ namespace VkAdsPhpSdk\services\urls;
 use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\exceptions\UnknownPropertyException;
-use VkAdsPhpSdk\services\urls\models\URLAddItem;
-use VkAdsPhpSdk\services\urls\models\URLGetItem;
+use VkAdsPhpSdkmodels\URLAddItem;
+use VkAdsPhpSdkmodels\URLGetItem;
 use GuzzleHttp\Psr7\Request;
 
 class UrlsService extends BaseService

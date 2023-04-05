@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\services\banner_patterns;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\banner_patterns\criterias\BannerPatternSelectionCriteria;
-use VkAdsPhpSdk\services\banner_patterns\models\BannerPattern;
+use VkAdsPhpSdkmodels\BannerPattern;
 
 class BannerPatternsService extends BaseService
 {

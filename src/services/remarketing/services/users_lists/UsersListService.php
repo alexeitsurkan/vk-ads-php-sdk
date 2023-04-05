@@ -4,8 +4,8 @@ namespace VkAdsPhpSdk\services\remarketing\services\users_lists;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\remarketing\services\users_lists\criterias\UsersListSelectionCriteria;
-use VkAdsPhpSdk\services\remarketing\services\users_lists\models\RemarketingUsersListGetItem;
-use VkAdsPhpSdk\services\remarketing\services\users_lists\models\RemarketingUsersListUpdateItem;
+use VkAdsPhpSdkmodels\RemarketingUsersListGetItem;
+use VkAdsPhpSdkmodels\RemarketingUsersListUpdateItem;
 
 class UsersListService extends BaseService
 {

@@ -3,8 +3,8 @@
 namespace VkAdsPhpSdk\services\user;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdk\services\user\models\UserAddItem;
-use VkAdsPhpSdk\services\user\models\UserGetItem;
+use VkAdsPhpSdkmodels\UserAddItem;
+use VkAdsPhpSdkmodels\UserGetItem;
 
 class UserService extends BaseService
 {
