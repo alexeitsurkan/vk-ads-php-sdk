@@ -208,7 +208,7 @@ abstract class BaseService
         return $this->getMapper()->mapArray($data, [], $class);
     }
 
-    protected function map(array $data, string $class): array
+    protected function map(array $data, string $class): mixed
     {
         return $this->getMapper()->map($data, new $class());
     }
