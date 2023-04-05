@@ -56,7 +56,11 @@ abstract class BaseService
 
         $response = $this->call('get', $uri, [RequestOptions::HEADERS => $this->getHeaders()]);
         if ($class) {
-            $response->body['items'] = $this->mapArray($response->body['items'], $class);
+            if (!empty($response->body['items'])){
+                $response->body['items'] = $this->mapArray($response->body['items'], $class);
+            }else{
+                return $this->map($response->body, $class);
+            }
         }
 
         return $response->body;
@@ -202,6 +206,11 @@ abstract class BaseService
     protected function mapArray(array $data, string $class): array
     {
         return $this->getMapper()->mapArray($data, [], $class);
+    }
+
+    protected function map(array $data, string $class): array
+    {
+        return $this->getMapper()->map($data, new $class());
     }
 
 }
