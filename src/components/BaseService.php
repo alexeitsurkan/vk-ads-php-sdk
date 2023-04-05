@@ -42,14 +42,14 @@ abstract class BaseService
      * @param string $uri
      * @param string|null $class
      * @param SelectionCriteria|null $selectionCriteria
-     * @return array
+     * @return mixed
      * @throws VkAdsApiException
      */
     protected function doGet(
         string $uri,
         string $class = null,
         SelectionCriteria $selectionCriteria = null
-    ): array {
+    ): mixed {
         $uri = $selectionCriteria
             ? Uri::withQueryValues(new Uri($uri), $selectionCriteria())
             : $uri;

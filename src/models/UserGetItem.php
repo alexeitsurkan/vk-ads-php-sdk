@@ -56,7 +56,7 @@ class UserGetItem extends Model
     public $email;
 
     /**
-     * @var UserEmailSettings
+     * @var UserEmailSettings[]
      */
     public $email_settings;
 
