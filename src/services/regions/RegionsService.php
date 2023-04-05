@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\services\regions;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\regions\criterias\RegionSelectionCriteria;
-use VkAdsPhpSdkmodels\Region;
+use VkAdsPhpSdk\models\Region;
 
 class RegionsService extends BaseService
 {

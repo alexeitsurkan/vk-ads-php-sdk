@@ -5,7 +5,7 @@ namespace VkAdsPhpSdk\services\lead_ads;
 use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\lead_ads\criterias\LeadAdsSelectionCriteria;
-use VkAdsPhpSdkmodels\LeadsListElement;
+use VkAdsPhpSdk\models\LeadsListElement;
 use VkAdsPhpSdk\services\lead_ads\services\lead_forms\LeadFormsService;
 
 class LeadAdsService extends BaseService

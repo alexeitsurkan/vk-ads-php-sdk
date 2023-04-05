@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\services\banner_fields;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\banner_fields\criterias\BannerFieldSelectionCriteria;
-use VkAdsPhpSdkmodels\BannerField;
+use VkAdsPhpSdk\models\BannerField;
 
 class BannerFieldsService extends BaseService
 {

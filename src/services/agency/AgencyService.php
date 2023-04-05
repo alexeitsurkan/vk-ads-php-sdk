@@ -4,9 +4,9 @@ namespace VkAdsPhpSdk\services\agency;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\agency\criterias\AgencyClientSelectionCriteria;
-use VkAdsPhpSdkmodels\AgencyClientAddItem;
-use VkAdsPhpSdkmodels\AgencyClientGetItem;
-use VkAdsPhpSdkmodels\AgencyClientUpdateItem;
+use VkAdsPhpSdk\models\AgencyClientAddItem;
+use VkAdsPhpSdk\models\AgencyClientGetItem;
+use VkAdsPhpSdk\models\AgencyClientUpdateItem;
 
 class AgencyService extends BaseService
 {

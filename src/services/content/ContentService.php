@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\content;
 
 use GuzzleHttp\RequestOptions;
-use VkAdsPhpSdkmodels\Content;
+use VkAdsPhpSdk\models\Content;
 use GuzzleHttp\Psr7\Request;
 use VkAdsPhpSdk\components\BaseService;
 

@@ -3,9 +3,9 @@
 namespace VkAdsPhpSdk\services\remarketing\services\segments\services\relations;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\SegmentRelationAddItem;
-use VkAdsPhpSdkmodels\SegmentRelationGetItem;
-use VkAdsPhpSdkmodels\SegmentRelationUpdateItem;
+use VkAdsPhpSdk\models\SegmentRelationAddItem;
+use VkAdsPhpSdk\models\SegmentRelationGetItem;
+use VkAdsPhpSdk\models\SegmentRelationUpdateItem;
 
 class SegmentRelationsService extends BaseService
 {

@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\mobile_types;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\MobileTypes;
+use VkAdsPhpSdk\models\MobileTypes;
 
 class MobileTypesService extends BaseService
 {

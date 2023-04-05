@@ -4,9 +4,9 @@ namespace VkAdsPhpSdk\services\remarketing\services\segments;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\remarketing\services\segments\criterias\SegmentSelectionCriteria;
-use VkAdsPhpSdkmodels\SegmentAddItem;
-use VkAdsPhpSdkmodels\SegmentGetItem;
-use VkAdsPhpSdkmodels\SegmentUpdateItem;
+use VkAdsPhpSdk\models\SegmentAddItem;
+use VkAdsPhpSdk\models\SegmentGetItem;
+use VkAdsPhpSdk\models\SegmentUpdateItem;
 use VkAdsPhpSdk\services\remarketing\services\segments\services\relations\SegmentRelationsService;
 
 class SegmentsService extends BaseService

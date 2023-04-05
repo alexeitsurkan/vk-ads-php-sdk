@@ -3,8 +3,8 @@
 namespace VkAdsPhpSdk\services\remarketing\services\local_geo;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\LocalGeoAddItem;
-use VkAdsPhpSdkmodels\LocalGeoGetItem;
+use VkAdsPhpSdk\models\LocalGeoAddItem;
+use VkAdsPhpSdk\models\LocalGeoGetItem;
 
 class LocalGeosService extends BaseService
 {

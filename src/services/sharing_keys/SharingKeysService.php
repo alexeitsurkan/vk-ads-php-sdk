@@ -4,10 +4,10 @@ namespace VkAdsPhpSdk\services\sharing_keys;
 
 use VkAdsPhpSdk\components\BaseService;
 use VkAdsPhpSdk\services\sharing_keys\criterias\SharingKeySelectionCriteria;
-use VkAdsPhpSdkmodels\SharingKey;
-use VkAdsPhpSdkmodels\SharingKeyAddItem;
-use VkAdsPhpSdkmodels\SharingKeyGetItem;
-use VkAdsPhpSdkmodels\SharingKeyUser;
+use VkAdsPhpSdk\models\SharingKey;
+use VkAdsPhpSdk\models\SharingKeyAddItem;
+use VkAdsPhpSdk\models\SharingKeyGetItem;
+use VkAdsPhpSdk\models\SharingKeyUser;
 
 class SharingKeysService extends BaseService
 {

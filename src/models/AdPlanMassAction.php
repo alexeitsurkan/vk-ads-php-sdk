@@ -1,6 +1,6 @@
 <?php
 
-namespace VkAdsPhpSdkmodels;
+namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
 use Symfony\Component\Validator\Constraints as Assert;

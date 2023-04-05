@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\services\apple_apps;
 
 use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\SkAdNetworkIdsAddItem;
+use VkAdsPhpSdk\models\SkAdNetworkIdsAddItem;
 use GuzzleHttp\Psr7\Request;
 
 class AppleAppsService extends BaseService

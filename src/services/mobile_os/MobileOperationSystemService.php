@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\mobile_os;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\MobileOperationSystem;
+use VkAdsPhpSdk\models\MobileOperationSystem;
 
 class MobileOperationSystemService extends BaseService
 {

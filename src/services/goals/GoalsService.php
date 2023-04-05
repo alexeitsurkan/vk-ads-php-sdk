@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\goals;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\Goals;
+use VkAdsPhpSdk\models\Goals;
 
 class GoalsService extends BaseService
 {

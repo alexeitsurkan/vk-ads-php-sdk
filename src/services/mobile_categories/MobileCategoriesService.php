@@ -3,7 +3,7 @@
 namespace VkAdsPhpSdk\services\mobile_categories;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\MobileCategory;
+use VkAdsPhpSdk\models\MobileCategory;
 
 class MobileCategoriesService extends BaseService
 {

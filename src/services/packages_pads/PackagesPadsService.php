@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\services\packages_pads;
 
 use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdkmodels\PackagePad;
+use VkAdsPhpSdk\models\PackagePad;
 use GuzzleHttp\Psr7\Request;
 
 class PackagesPadsService extends BaseService
