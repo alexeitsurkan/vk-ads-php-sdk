@@ -184,7 +184,7 @@ class VkAdsOAuth extends BaseService
     /**
      * @throws exceptions\VkAdsApiException
      */
-    public function deleteToken(string $client_id, string $client_secret, string $user_id = null): array
+    public function deleteToken(string $client_id, string $client_secret, string $user_id = null): bool
     {
         $options = [
             RequestOptions::HEADERS     => $this->headers,
@@ -195,9 +195,11 @@ class VkAdsOAuth extends BaseService
             ]
         ];
 
-        return $this
+        $this
             ->call('POST', '/api/v2/oauth2/token/delete.json', $options)
             ->body;
+
+        return true;
     }
 
 }
