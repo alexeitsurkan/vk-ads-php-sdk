@@ -2,6 +2,7 @@
 
 namespace VkAdsPhpSdk\components;
 
+use ReflectionClass;
 use VkAdsPhpSdk\exceptions\UnknownPropertyException;
 
 abstract class Model
@@ -26,5 +27,15 @@ abstract class Model
                 }
             }
         }
+    }
+
+    /**
+     * get all property
+     * @return array
+     */
+    public static function getProperties(): array
+    {
+        $r = new ReflectionClass(static::class);
+        return array_column($r->getProperties(),'name');
     }
 }
