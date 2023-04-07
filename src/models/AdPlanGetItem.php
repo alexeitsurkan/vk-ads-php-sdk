@@ -3,8 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\PricedGoal;
-use VkAdsPhpSdk\models\AdGroup;
 
 class AdPlanGetItem extends Model
 {
@@ -39,7 +37,7 @@ class AdPlanGetItem extends Model
     public $vkads_status;
 
     /**
-     * @var AdGroup[]
+     * @var AdGroupGetItem[]
      */
     public $ad_groups;
 

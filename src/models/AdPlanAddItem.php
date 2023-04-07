@@ -3,8 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\PricedGoal;
-use VkAdsPhpSdk\models\AdGroup;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class AdPlanAddItem extends Model
@@ -22,7 +20,7 @@ class AdPlanAddItem extends Model
     public $status;
 
     /**
-     * @var AdGroup[]
+     * @var AdGroupAddItem[]
      */
     public $ad_groups;
 

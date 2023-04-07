@@ -3,8 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\PricedGoal;
-use VkAdsPhpSdk\models\Targetings;
 use Symfony\Component\Validator\Constraints as Assert;
 
 class AdGroupUpdateItem extends Model
