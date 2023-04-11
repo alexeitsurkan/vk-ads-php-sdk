@@ -17,6 +17,11 @@ class BannerSelectionCriteria extends SelectionCriteria
     public $offset = 0;
 
     /**
+     * @var string[]
+     */
+    public $fields;
+
+    /**
      * @var int
      */
     public $_id;

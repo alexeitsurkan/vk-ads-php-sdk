@@ -216,8 +216,13 @@ class VkAdsApiService
 
 
     public function __construct(
-        private string $token
+        private ?string $token = null
     ) {
+    }
+
+    public function setToken(string $token)
+    {
+        $this->token = $token;
     }
 
     public function getAdPlansService(): AdPlansService

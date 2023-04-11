@@ -7,7 +7,7 @@ use VkAdsPhpSdk\components\Model;
 class FulltimeTargeting extends Model
 {
     /**
-     * @var string
+     * @var string[]
      */
     public $flags;
 
