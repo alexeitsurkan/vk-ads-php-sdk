@@ -220,9 +220,10 @@ class VkAdsApiService
     ) {
     }
 
-    public function setToken(string $token)
+    public function setToken(string $token): static
     {
         $this->token = $token;
+        return $this;
     }
 
     public function getAdPlansService(): AdPlansService
