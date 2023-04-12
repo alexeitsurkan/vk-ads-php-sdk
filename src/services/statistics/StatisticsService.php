@@ -8,12 +8,13 @@ use VkAdsPhpSdk\services\statistics\criterias\StatisticGoalSelectionCriteria;
 use VkAdsPhpSdk\services\statistics\criterias\StatisticInappSelectionCriteria;
 use VkAdsPhpSdk\services\statistics\criterias\StatisticOfflineConversionsSelectionCriteria;
 use VkAdsPhpSdk\services\statistics\criterias\StatisticSelectionCriteria;
+use VkAdsPhpSdk\services\statistics\criterias\TotalStatisticSelectionCriteria;
 use VkAdsPhpSdk\services\statistics\enum\StatisticObjectEnum;
 
 class StatisticsService extends BaseService
 {
     /**
-     * Общая статистика с пагинацией
+     * статистика
      * @param StatisticObjectEnum $obj
      * @param StatisticSelectionCriteria $selectionCriteria
      * @return array
@@ -22,6 +23,20 @@ class StatisticsService extends BaseService
     public function get(
         StatisticObjectEnum $obj,
         StatisticSelectionCriteria $selectionCriteria
+    ):array {
+        return $this->doGet("/api/v2/statistics/$obj/day.json",selectionCriteria: $selectionCriteria);
+    }
+
+    /**
+     * Общая статистика с пагинацией
+     * @param StatisticObjectEnum $obj
+     * @param TotalStatisticSelectionCriteria $selectionCriteria
+     * @return array
+     * @throws VkAdsApiException
+     */
+    public function getTotal(
+        StatisticObjectEnum $obj,
+        TotalStatisticSelectionCriteria $selectionCriteria
     ):array {
         return $this->doGet("/api/v3/statistics/$obj/day.json",selectionCriteria: $selectionCriteria);
     }
