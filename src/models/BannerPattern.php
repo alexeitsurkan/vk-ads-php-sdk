@@ -22,12 +22,12 @@ class BannerPattern extends Model
     public $description;
 
     /**
-     * @var object
+     * object
      */
     public $format;
 
     /**
-     * @var object
+     * object
      */
     public $interface;
 

@@ -32,7 +32,7 @@ class AdPlanGetItem extends Model
     public $status;
 
     /**
-     * @var object
+     * object
      */
     public $vkads_status;
 

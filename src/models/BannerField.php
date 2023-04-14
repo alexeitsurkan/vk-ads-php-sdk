@@ -22,12 +22,12 @@ class BannerField extends Model
     public $field;
 
     /**
-     * @var object
+     * object
      */
     public $format;
 
     /**
-     * @var object
+     * object
      */
     public $interface;
 

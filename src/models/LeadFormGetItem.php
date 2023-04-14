@@ -92,7 +92,7 @@ class LeadFormGetItem extends Model
     public $logo_id;
 
     /**
-     * @var object
+     * object
      */
     public $logo;
 

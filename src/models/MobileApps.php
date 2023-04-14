@@ -47,7 +47,7 @@ class MobileApps extends Model
     public $url_object_id;
 
     /**
-     * @var object[]
+     * object[]
      */
     public $users;
 }

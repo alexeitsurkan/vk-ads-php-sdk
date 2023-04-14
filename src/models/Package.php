@@ -52,7 +52,7 @@ class Package extends Model
     public $objective;
 
     /**
-     * @var object
+     * object
      */
     public $options;
 
@@ -97,7 +97,7 @@ class Package extends Model
     public $updated;
 
     /**
-     * @var object
+     * object
      */
     public $url_types;
 }

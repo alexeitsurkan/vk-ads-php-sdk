@@ -38,7 +38,7 @@ class BannerGetItem extends Model
     public $ad_group_id;
 
     /**
-     * @var object
+     *  object
      */
     public $content;
 
@@ -48,7 +48,7 @@ class BannerGetItem extends Model
     public $delivery;
 
     /**
-     * @var object[]
+     *  object[]
      */
     public $issues;
 
@@ -63,12 +63,12 @@ class BannerGetItem extends Model
     public $moderation_status;
 
     /**
-     * @var object
+     * object
      */
     public $textblocks;
 
     /**
-     * @var object
+     * object
      */
     public $urls;
 }

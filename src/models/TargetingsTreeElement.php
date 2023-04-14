@@ -7,7 +7,7 @@ use VkAdsPhpSdk\components\Model;
 class TargetingsTreeElement extends Model
 {
     /**
-     * @var object[]
+     * object[]
      */
     public $children;
 

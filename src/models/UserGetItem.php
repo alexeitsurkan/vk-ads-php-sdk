@@ -7,7 +7,7 @@ use VkAdsPhpSdk\components\Model;
 class UserGetItem extends Model
 {
     /**
-     * @var object
+     * object
      */
     public $account;
 
@@ -82,7 +82,7 @@ class UserGetItem extends Model
     public $lastname;
 
     /**
-     * @var object
+     * object
      */
     public $mailings;
 
@@ -92,7 +92,7 @@ class UserGetItem extends Model
     public $max_active_banners;
 
     /**
-     * @var object
+     * object
      */
     public $permissions;
 

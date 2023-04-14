@@ -67,7 +67,7 @@ class LeadFormsListElement extends Model
     public $notification_actions;
 
     /**
-     * @var object
+     * object
      */
     public $logo;
 }

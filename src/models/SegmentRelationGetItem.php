@@ -22,7 +22,7 @@ class SegmentRelationGetItem extends Model
     public $object_type;
 
     /**
-     * @var object
+     * object
      */
     public $params;
 }

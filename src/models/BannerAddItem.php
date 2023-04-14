@@ -20,17 +20,17 @@ class BannerAddItem extends Model
     public $status;
 
     /**
-     * @var object with BannerContent as values todo check
+     * object with BannerContent as values todo check
      */
     public $content;
 
     /**
-     * @var object with Textblock as values todo check
+     * object with Textblock as values todo check
      */
     public $textblocks;
 
     /**
-     * @var object with Urls as values todo check
+     * object with Urls as values todo check
      */
     public $urls;
 }

@@ -12,7 +12,7 @@ class LeadFormNotificationDestination extends Model
     public $type;
 
     /**
-     * @var object
+     * object
      */
     public $settings;
 }

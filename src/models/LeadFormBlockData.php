@@ -12,7 +12,7 @@ class LeadFormBlockData extends Model
     public $type;
 
     /**
-     * @var object
+     * object
      */
     public $data;
 }

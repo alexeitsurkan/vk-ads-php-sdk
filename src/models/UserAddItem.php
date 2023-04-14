@@ -34,7 +34,7 @@ class UserAddItem extends Model
     public $language;
 
     /**
-     * @var object
+     * object
      */
     public $mailings;
 
