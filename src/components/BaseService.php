@@ -120,19 +120,27 @@ abstract class BaseService
      */
     protected function call(string $method, string $uri, array $options): VkAdsApiResponse
     {
-        try {
-            $httpResponse = $this->http_client->send(new Request($method, $uri), $options);
-        } catch (GuzzleException $exception) {
-            throw new VkAdsApiException(
-                $exception->getMessage(),
-                $exception->getCode(),
-                $exception
-            );
+        $count_attempts = 0;
+        while (true){
+            try {
+                $httpResponse = $this->http_client->send(new Request($method, $uri), $options);
+            } catch (GuzzleException $exception) {
+                if($exception->getCode() === 429 && $count_attempts < 10){
+                    sleep(0.5);
+                    $count_attempts++;
+                    continue;
+                }
+                throw new VkAdsApiException(
+                    $exception->getMessage(),
+                    $exception->getCode(),
+                    $exception
+                );
+            }
+            $response         = new VkAdsApiResponse();
+            $response->header = $httpResponse->getHeaders();
+            $response->body   = json_decode($httpResponse->getBody()->getContents(), true);
+            return $response;
         }
-        $response         = new VkAdsApiResponse();
-        $response->header = $httpResponse->getHeaders();
-        $response->body   = json_decode($httpResponse->getBody()->getContents(), true);
-        return $response;
     }
 
     /**
