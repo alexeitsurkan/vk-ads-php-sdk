@@ -66,7 +66,7 @@ abstract class BaseService
         return $response->body;
     }
 
-    protected function doPost(string $uri, Model|array $model): array
+    protected function doPost(string $uri, Model|array $model): ?array
     {
 //        $this->validate([$model]);
         $options = [
