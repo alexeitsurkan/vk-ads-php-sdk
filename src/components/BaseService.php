@@ -68,7 +68,7 @@ abstract class BaseService
 
     protected function doPost(string $uri, Model|array $model): ?array
     {
-//        $this->validate([$model]);
+        $this->validate([$model]);
         $options = [
             RequestOptions::HEADERS => $this->getHeaders(),
             RequestOptions::BODY    => $this->getBody($model)
@@ -87,7 +87,7 @@ abstract class BaseService
      */
     protected function doMassUpdate(string $uri, array $models): bool
     {
-//        $this->validate($models);
+        $this->validate($models);
         $options = [
             RequestOptions::HEADERS => $this->getHeaders(),
             RequestOptions::BODY    => $this->getBody($models)
@@ -167,7 +167,7 @@ abstract class BaseService
     private function validate(array $models)
     {
         foreach ($models as $key => $model) {
-            $result = $this->getValidator()->validate($model, null, true);
+            $result = $this->getValidator()->validate($model);
             if ($result) {
                 foreach ($result as $error) {
                     if (!isset($errors[$key])) {
