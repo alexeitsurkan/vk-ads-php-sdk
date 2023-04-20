@@ -4,7 +4,7 @@ namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
 
-class Transaction extends Model
+class TransactionGetItem extends Model
 {
     /**
      * @var float
