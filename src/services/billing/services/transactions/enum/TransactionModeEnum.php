@@ -6,6 +6,6 @@ use VkAdsPhpSdk\components\Enum;
 
 class TransactionModeEnum extends Enum
 {
-    public const TO_CLIENT   = 'to';
-    public const FROM_CLIENT = 'from';
+    public const TO   = 'to';
+    public const FROM = 'from';
 }
