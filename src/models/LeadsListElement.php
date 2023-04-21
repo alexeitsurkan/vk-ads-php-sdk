@@ -42,7 +42,7 @@ class LeadsListElement extends Model
     public $created_at;
 
     /**
-     * @var ContactInfo
+     * @var LeadContactInfo
      */
     public $contact_info;
 
