@@ -12,37 +12,37 @@ class FulltimeTargeting extends Model
     public $flags;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $fri;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $mon;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $sat;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $sun;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $thu;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $tue;
 
     /**
-     * @var int
+     * @var int[]
      */
     public $wed;
 }
