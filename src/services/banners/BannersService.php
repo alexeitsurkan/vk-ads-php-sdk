@@ -25,15 +25,6 @@ class BannersService extends BaseService
     }
 
     /**
-     * @param BannerAddItem $bannerAddItem
-     * @return array
-     */
-    public function create(BannerAddItem $bannerAddItem): array
-    {
-        return $this->doPost(self::getUri(), $bannerAddItem);
-    }
-
-    /**
      * @param int $id
      * @return bool
      */

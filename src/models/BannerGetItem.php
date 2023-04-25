@@ -3,7 +3,6 @@
 namespace VkAdsPhpSdk\models;
 
 use VkAdsPhpSdk\components\Model;
-use VkAdsPhpSdk\models\ModerationReason;
 
 class BannerGetItem extends Model
 {
@@ -38,7 +37,7 @@ class BannerGetItem extends Model
     public $ad_group_id;
 
     /**
-     *  object
+     * @var BannerContent[]
      */
     public $content;
 
@@ -63,12 +62,12 @@ class BannerGetItem extends Model
     public $moderation_status;
 
     /**
-     * object
+     * @var Textblock[]
      */
     public $textblocks;
 
     /**
-     * object
+     * @var Urls[]
      */
     public $urls;
 }
