@@ -20,7 +20,7 @@ class VkAdsOAuth extends BaseService
      * @param $client_id
      * @param $state
      * @param string[]|ScopeAgencyClientEnum[]|ScopeClientEnum[]|ScopeManagerClientEnum[] $scope
-     * @param null $redirect_uri
+     * @param string|null $redirect_uri
      * @return string
      */
     public static function getAuthorizeUrl($client_id, $state, $scope, $redirect_uri = null): string
