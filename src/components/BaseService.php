@@ -125,8 +125,8 @@ abstract class BaseService
             try {
                 $httpResponse = $this->http_client->send(new Request($method, $uri), $options);
             } catch (GuzzleException $exception) {
-                if($exception->getCode() === 429 && $count_attempts < 10){
-                    sleep(0.5);
+                if($exception->getCode() === 429 && $count_attempts < 20){
+                    sleep(1);
                     $count_attempts++;
                     continue;
                 }
