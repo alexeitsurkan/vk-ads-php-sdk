@@ -34,7 +34,6 @@ class AdGroupUpdateItem extends Model
      *     min=1,
      *     max=2147483647
      * )
-     * @Assert\NotBlank()
      */
     public $package_id;
 
