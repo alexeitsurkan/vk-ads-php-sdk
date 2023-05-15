@@ -5,6 +5,7 @@ namespace VkAdsPhpSdk;
 use VkAdsPhpSdk\services\ad_groups\AdGroupsService;
 use VkAdsPhpSdk\services\ad_plans\AdPlansService;
 use VkAdsPhpSdk\services\agency\AgencyService;
+use VkAdsPhpSdk\services\agency_managers\AgencyManagersService;
 use VkAdsPhpSdk\services\apple_apps\AppleAppsService;
 use VkAdsPhpSdk\services\banner_fields\BannerFieldsService;
 use VkAdsPhpSdk\services\banner_patterns\BannerPatternsService;
@@ -122,6 +123,11 @@ class VkAdsApiService
      * @var AgencyService
      */
     private $agencyService;
+
+    /**
+     * @var AgencyManagersService
+     */
+    private $agencyManagersService;
 
     /**
      * @var UserService
@@ -360,6 +366,14 @@ class VkAdsApiService
             $this->agencyService = new AgencyService($this->token);
         }
         return $this->agencyService;
+    }
+
+    public function getAgencyManagersService(): AgencyManagersService
+    {
+        if (!$this->agencyManagersService) {
+            $this->agencyManagersService = new AgencyManagersService($this->token);
+        }
+        return $this->agencyManagersService;
     }
 
     public function getUserService(): UserService
