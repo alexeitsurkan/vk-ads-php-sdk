@@ -3,11 +3,11 @@
 namespace VkAdsPhpSdk\services\agency_managers;
 
 use VkAdsPhpSdk\components\BaseService;
-use VkAdsPhpSdk\services\agency_managers\criterias\AgencyManagersSelectionCriteria;
+use VkAdsPhpSdk\services\agency_managers\criterias\AgencyManagerSelectionCriteria;
 
 class AgencyManagersService extends BaseService
 {
-    public function get(AgencyManagersSelectionCriteria $selectionCriteria): array
+    public function get(AgencyManagerSelectionCriteria $selectionCriteria): array
     {
         return $this->doGet('/api/v2/agency/managers.json', selectionCriteria: $selectionCriteria);
     }
