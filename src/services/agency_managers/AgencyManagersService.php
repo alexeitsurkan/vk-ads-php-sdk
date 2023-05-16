@@ -3,6 +3,7 @@
 namespace VkAdsPhpSdk\services\agency_managers;
 
 use VkAdsPhpSdk\components\BaseService;
+use VkAdsPhpSdk\models\AgencyManagerAddItem;
 use VkAdsPhpSdk\services\agency_managers\criterias\AgencyManagerSelectionCriteria;
 
 class AgencyManagersService extends BaseService
@@ -12,7 +13,7 @@ class AgencyManagersService extends BaseService
         return $this->doGet('/api/v2/agency/managers.json', selectionCriteria: $selectionCriteria);
     }
 
-    public function create(array $model): array
+    public function create(array|AgencyManagerAddItem $model): array
     {
         return $this->doPost('/api/v2/agency/managers.json', $model);
     }
