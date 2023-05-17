@@ -56,7 +56,7 @@ abstract class BaseService
 
         $response = $this->call('get', $uri, [RequestOptions::HEADERS => $this->getHeaders()]);
         if ($class) {
-            if (!empty($response->body['items'])){
+            if (isset($response->body['items'])){
                 $response->body['items'] = $this->mapArray($response->body['items'], $class);
             }else{
                 return $this->map($response->body, $class);
