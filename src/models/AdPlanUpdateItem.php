@@ -11,7 +11,6 @@ class AdPlanUpdateItem extends Model
 {
     /**
      * @var string
-     * @Assert\NotBlank()
      */
     public $name;
 

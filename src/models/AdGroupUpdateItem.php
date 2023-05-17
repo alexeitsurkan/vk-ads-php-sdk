@@ -9,7 +9,6 @@ class AdGroupUpdateItem extends Model
 {
     /**
      * @var string Название группы
-     * @Assert\NotBlank()
      */
     public $name;
 
