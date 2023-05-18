@@ -132,7 +132,6 @@ class AdGroupUpdateItem extends Model
 
     /**
      * @var PricedGoal Оплата по целям ТОПа/событиям в мобильном приложении
-     * @Assert\Valid()
      */
     public $priced_goal;
 

@@ -63,7 +63,6 @@ class AdPlanAddItem extends Model
 
     /**
      * @var PricedGoal
-     * @Assert\Valid()
      */
     public $priced_goal;
 
