@@ -12,7 +12,7 @@ class UserManager extends Model
     public $id;
 
     /**
-     * @var AdditionalManagerInfo[]
+     * @var AdditionalManagerInfo
      */
     public $additional_info;
 

@@ -6,9 +6,12 @@ use VkAdsPhpSdk\components\Model;
 use VkAdsPhpSdk\models\ClientOrdJuridical;
 use VkAdsPhpSdk\models\ClientOrdPhysical;
 use VkAdsPhpSdk\models\UserClient;
+use Symfony\Component\Validator\Constraints as Assert;
 
 class AgencyClientAddItem extends Model
 {
+    public const ACCESS_TYPES = ['full_access', 'readonly', 'fin_readonly', 'ads_readonly'];
+
     /**
      * @var bool
      */
@@ -16,26 +19,26 @@ class AgencyClientAddItem extends Model
 
     /**
      * @var string
-     * @Assert\NotBlank()
-     * [Assert\Choice(['full_access', 'readonly', 'fin_readonly', 'ads_readonly'])]
+     * @Assert\NotBlank
+     * @Assert\Choice(self::ACCESS_TYPES)
      */
     public $access_type;
 
     /**
      * @var UserClient
-     * @Assert\Valid()
+     * @Assert\Valid
      */
     public $user;
 
     /**
      * @var ClientOrdJuridical
-     * @Assert\Valid()
+     * @Assert\Valid
      */
     public $juridical_details;
 
     /**
      * @var ClientOrdPhysical
-     * @Assert\Valid()
+     * @Assert\Valid
      */
     public $physical_details;
 }
