@@ -9,6 +9,7 @@ use VkAdsPhpSdk\enum\ScopeAgencyClientEnum;
 use VkAdsPhpSdk\enum\ScopeClientEnum;
 use VkAdsPhpSdk\enum\ScopeManagerClientEnum;
 use GuzzleHttp\Psr7\Uri;
+use VkAdsPhpSdk\exceptions\VkAdsApiException;
 
 class VkAdsOAuth extends BaseService
 {
@@ -41,22 +42,33 @@ class VkAdsOAuth extends BaseService
      */
     public function authorization(
         string $client_id,
+        string $client_secret,
+        string $user_id,
         string $code,
         bool $permanent = false
     ): array {
-        $options  = [
-            RequestOptions::HEADERS     => $this->headers,
-            RequestOptions::FORM_PARAMS => [
-                'grant_type' => GrandTypeEnum::AUTHORIZATION_CODE,
-                'client_id'  => $client_id,
-                'code'       => $code,
-                'permanent'  => $permanent
-            ]
-        ];
+        try{
+            $options  = [
+                RequestOptions::HEADERS     => $this->headers,
+                RequestOptions::FORM_PARAMS => [
+                    'grant_type' => GrandTypeEnum::AUTHORIZATION_CODE,
+                    'client_id'  => $client_id,
+                    'code'       => $code,
+                    'permanent'  => $permanent
+                ]
+            ];
 
-        return $this
-            ->call('POST', '/api/v2/oauth2/token.json', $options)
-            ->body;
+            return $this
+                ->call('POST', '/api/v2/oauth2/token.json', $options)
+                ->body;
+        } catch (VkAdsApiException $e) {
+            if ($e->getCode() == 403) {
+                $oauth->deleteToken($client_id, $client_secret, $user_id);
+                return $this->authorization($client_id,$user_id,$code);
+            } else {
+                throw $e;
+            }
+        }
     }
 
     /**
@@ -87,21 +99,34 @@ class VkAdsOAuth extends BaseService
     public function getClientCredentials(
         string $client_id,
         string $client_secret,
+        string $user_id,
         bool $permanent = false
     ): array {
-        $options  = [
-            RequestOptions::HEADERS     => $this->headers,
-            RequestOptions::FORM_PARAMS => [
-                'grant_type'    => GrandTypeEnum::CLIENT_CREDENTIALS,
-                'client_id'     => $client_id,
-                'client_secret' => $client_secret,
-                'permanent'     => $permanent
-            ]
-        ];
+        try {
+            $options  = [
+                RequestOptions::HEADERS     => $this->headers,
+                RequestOptions::FORM_PARAMS => [
+                    'grant_type'    => GrandTypeEnum::CLIENT_CREDENTIALS,
+                    'client_id'     => $client_id,
+                    'client_secret' => $client_secret,
+                    'permanent'     => $permanent
+                ]
+            ];
 
-        return $this
-            ->call('POST', '/api/v2/oauth2/token.json', $options)
-            ->body;
+            return $this
+                ->call('POST', '/api/v2/oauth2/token.json', $options)
+                ->body;
+        }catch (VkAdsApiException $e){
+            if($e->getCode() === 403){
+                $this->deleteToken(
+                    $client_id,
+                    $client_secret,
+                    $user_id
+                );
+                return $this->getClientCredentials($client_id, $client_secret, $user_id);
+            }else throw $e;
+        }
+
     }
 
     /**
@@ -113,20 +138,31 @@ class VkAdsOAuth extends BaseService
         string $agency_client_id,
         bool $permanent = false
     ): array {
-        $options  = [
-            RequestOptions::HEADERS     => $this->headers,
-            RequestOptions::FORM_PARAMS => [
-                'grant_type'       => GrandTypeEnum::AGENCY_CLIENT_CREDENTIALS,
-                'client_id'        => $client_id,
-                'client_secret'    => $client_secret,
-                'agency_client_id' => $agency_client_id,
-                'permanent'        => $permanent
-            ]
-        ];
+        try {
+            $options  = [
+                RequestOptions::HEADERS     => $this->headers,
+                RequestOptions::FORM_PARAMS => [
+                    'grant_type'       => GrandTypeEnum::AGENCY_CLIENT_CREDENTIALS,
+                    'client_id'        => $client_id,
+                    'client_secret'    => $client_secret,
+                    'agency_client_id' => $agency_client_id,
+                    'permanent'        => $permanent
+                ]
+            ];
 
-        return $this
-            ->call('POST', '/api/v2/oauth2/token.json', $options)
-            ->body;
+            return $this
+                ->call('POST', '/api/v2/oauth2/token.json', $options)
+                ->body;
+        }catch (VkAdsApiException $e){
+            if($e->getCode() === 403){
+                $this->deleteToken(
+                    $client_id,
+                    $client_secret,
+                    $agency_client_id
+                );
+                return $this->getAgencyClientCredentials($client_id, $client_secret, $agency_client_id);
+            }else throw $e;
+        }
     }
 
     /**
