@@ -2,10 +2,13 @@
 
 namespace VkAdsPhpSdk\components;
 
+use GuzzleHttp\BodySummarizer;
+use GuzzleHttp\Middleware;
 use GuzzleHttp\RequestOptions;
 use VkAdsPhpSdk\exceptions\VkAdsApiException;
 use VkAdsPhpSdk\exceptions\VkAdsModelValidationException;
 use GuzzleHttp\Client;
+use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
@@ -35,7 +38,14 @@ abstract class BaseService
 
     public function __construct(protected $token = null)
     {
-        $this->http_client = new Client(['base_uri' => self::BASE_URI]);
+        $handlerStack = HandlerStack::create();
+        $handlerStack->push(Middleware::httpErrors(new BodySummarizer(9999)), 'http_errors');
+        $this->http_client = new Client(
+            [
+                'base_uri' => self::BASE_URI,
+                'handler' => $handlerStack,
+            ]
+        );
     }
 
     /**
@@ -149,10 +159,11 @@ abstract class BaseService
     protected function getHeaders(): array
     {
         $headers = [
-            'Content-Type'    => 'application/json; charset=utf-8',
+            'Content-Type'    => 'application/json;',
+//            'Content-Length'  => '1000000',
             'Authorization'   => 'Bearer ' . $this->token,
-            'Accept-Encoding' => 'gzip, deflate',
-            'Accept-Language' => 'ru-RU,ru;q=0.9,en-US;q=0.8'
+//            'Accept-Encoding' => 'identity',
+//            'Accept-Language' => 'ru-RU,ru;q=0.9,en-US;q=0.8'
         ];
 
         return $headers;
