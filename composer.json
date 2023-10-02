@@ -17,7 +17,7 @@
     "require": {
         "php": "8.*",
         "ext-json": "*",
-        "symfony/validator": "^4.3 || ^5.0",
+        "symfony/validator": "6.3.*",
         "netresearch/jsonmapper": "^3.0.0",
         "guzzlehttp/guzzle": "^6.5 || ^7.2"
     }
